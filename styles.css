@@ -974,3 +974,63 @@ h3 {
         align-items: flex-start;
     }
 }
+
+/* === EARTH GLOBE SVG ANIMATIONS === */
+
+/* Slow fade-shimmer on orbital path ellipses */
+.earth-orbit-path {
+    animation: earthOrbitShimmer 18s ease-in-out infinite;
+}
+
+.earth-orbit-group > ellipse:nth-of-type(2) {
+    animation-delay: 5s;
+    animation-duration: 14s;
+}
+
+@keyframes earthOrbitShimmer {
+    0%, 100% {
+        stroke-opacity: 1;
+    }
+    50% {
+        stroke-opacity: 0.3;
+    }
+}
+
+/* Pulse animation on connection node dots */
+.earth-node-dot {
+    animation: earthNodePulse 2.5s ease-in-out infinite;
+}
+
+.earth-node-dot:nth-child(2) { animation-delay: 0.3s; }
+.earth-node-dot:nth-child(3) { animation-delay: 0.6s; }
+.earth-node-dot:nth-child(4) { animation-delay: 0.9s; }
+.earth-node-dot:nth-child(5) { animation-delay: 1.2s; }
+.earth-node-dot:nth-child(6) { animation-delay: 1.5s; }
+.earth-node-dot:nth-child(7) { animation-delay: 1.8s; }
+.earth-node-dot:nth-child(8) { animation-delay: 2.1s; }
+
+@keyframes earthNodePulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.6);
+    }
+}
+
+/* Subtle twinkle on background stars */
+.earth-stars circle {
+    animation: earthStarTwinkle 4s ease-in-out infinite;
+}
+
+.earth-stars circle:nth-child(odd) {
+    animation-delay: 1.5s;
+    animation-duration: 5s;
+}
+
+@keyframes earthStarTwinkle {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 0.2; }
+}
