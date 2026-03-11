@@ -705,10 +705,10 @@ h3 {
 
 /* Overrides for specific cards to look perfect */
 .network-img {
-    width: 40%;
-    height: 100%;
-    right: 0;
-    bottom: 0;
+    width: 35%;
+    height: 90%;
+    right: 5%;
+    bottom: 5%;
     -webkit-mask-image: linear-gradient(to right, transparent, black 10%);
     mask-image: linear-gradient(to right, transparent, black 10%);
 }
@@ -982,15 +982,18 @@ h3 {
     animation: earthOrbitShimmer 18s ease-in-out infinite;
 }
 
-.earth-orbit-group > ellipse:nth-of-type(2) {
+.earth-orbit-group>ellipse:nth-of-type(2) {
     animation-delay: 5s;
     animation-duration: 14s;
 }
 
 @keyframes earthOrbitShimmer {
-    0%, 100% {
+
+    0%,
+    100% {
         stroke-opacity: 1;
     }
+
     50% {
         stroke-opacity: 0.3;
     }
@@ -1001,19 +1004,42 @@ h3 {
     animation: earthNodePulse 2.5s ease-in-out infinite;
 }
 
-.earth-node-dot:nth-child(2) { animation-delay: 0.3s; }
-.earth-node-dot:nth-child(3) { animation-delay: 0.6s; }
-.earth-node-dot:nth-child(4) { animation-delay: 0.9s; }
-.earth-node-dot:nth-child(5) { animation-delay: 1.2s; }
-.earth-node-dot:nth-child(6) { animation-delay: 1.5s; }
-.earth-node-dot:nth-child(7) { animation-delay: 1.8s; }
-.earth-node-dot:nth-child(8) { animation-delay: 2.1s; }
+.earth-node-dot:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.earth-node-dot:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.earth-node-dot:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.earth-node-dot:nth-child(5) {
+    animation-delay: 1.2s;
+}
+
+.earth-node-dot:nth-child(6) {
+    animation-delay: 1.5s;
+}
+
+.earth-node-dot:nth-child(7) {
+    animation-delay: 1.8s;
+}
+
+.earth-node-dot:nth-child(8) {
+    animation-delay: 2.1s;
+}
 
 @keyframes earthNodePulse {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
         transform: scale(1);
     }
+
     50% {
         opacity: 0.5;
         transform: scale(1.6);
@@ -1031,6 +1057,443 @@ h3 {
 }
 
 @keyframes earthStarTwinkle {
-    0%, 100% { opacity: 0.6; }
-    50% { opacity: 0.2; }
+
+    0%,
+    100% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+}
+/* ==================================================
+   IDEABAAZ IFFD GATEWAY REDESIGN
+   Bespoke classes for Mint & Marble / Schema Vibe
+   ================================================== */
+
+.iffd-body {
+    background-color: #050505; /* Deeper black for high contrast */
+    color: #F4F4F5;
+    overflow-x: hidden;
+}
+
+/* === BOLD TYPOGRAPHY HERO === */
+.iffd-hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 120px 24px 60px;
+    z-index: 2;
+}
+
+.iffd-massive-text {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: clamp(4rem, 15vw, 12rem);
+    line-height: 0.85;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.iffd-text-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.iffd-text-row.left {
+    justify-content: flex-start;
+}
+
+.iffd-text-row.right {
+    justify-content: flex-end;
+}
+
+.iffd-text-row.center {
+    justify-content: center;
+}
+
+.iffd-accent-color {
+    color: var(--accent-primary);
+}
+
+.iffd-hollow-text {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+    color: transparent;
+}
+
+/* === INTERSECTING IMAGES & SVGs === */
+.iffd-floating-asset {
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.iffd-wireframe-svg {
+    stroke: rgba(255, 255, 255, 0.3);
+    stroke-width: 0.5px;
+    fill: none;
+    filter: drop-shadow(0 0 15px rgba(255, 90, 31, 0.1));
+}
+
+.iffd-hero-img-1 {
+    top: 20%;
+    right: 15%;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(1.2);
+    mix-blend-mode: luminosity;
+    opacity: 0.5;
+    transform: rotate(5deg);
+}
+
+.iffd-hero-img-2 {
+    bottom: 10%;
+    left: 10%;
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    filter: sepia(100%) hue-rotate(330deg) saturate(300%) contrast(1.2); /* Orange tint */
+    opacity: 0.6;
+    transform: rotate(-3deg);
+}
+
+/* === SUBTEXT & DESCRIPTORS === */
+.iffd-descriptor {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    max-width: 300px;
+    line-height: 1.5;
+    color: var(--text-muted);
+}
+
+.iffd-hero-desc {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    max-width: 600px;
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.7);
+}
+
+/* === STATS / SCALE SECTION === */
+.iffd-scale-section {
+    padding: 150px 0;
+    position: relative;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.iffd-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 80px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.iffd-stat-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.iffd-stat-number {
+    font-family: var(--font-head);
+    font-size: clamp(4rem, 8vw, 7rem);
+    font-weight: 300;
+    line-height: 1;
+    color: var(--accent-primary);
+    margin-bottom: -10px;
+    z-index: 2;
+}
+
+.iffd-stat-label {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-left: 20px;
+    z-index: 3;
+}
+
+.iffd-stat-item svg {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+
+/* === ECHOES IN MOTION (Image over text feature) === */
+.iffd-center-feature {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.iffd-feature-text {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.iffd-feature-text h2 {
+    font-family: var(--font-head);
+    font-size: clamp(3rem, 10vw, 8rem);
+    line-height: 1;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.8);
+    margin: 0;
+}
+
+.iffd-feature-img-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 350px;
+    height: 450px;
+    transform: rotate(8deg);
+    transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+}
+
+.iffd-feature-img-wrapper:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+.iffd-feature-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9) contrast(1.1);
+}
+
+.iffd-feature-badge {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    background: var(--accent-primary);
+    color: #fff;
+    padding: 10px 20px;
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+}
+
+/* === ASYMMETRICAL LIST (Activities / Benefits) === */
+.iffd-list-section {
+    padding: 150px 0;
+}
+
+.iffd-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.iffd-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    position: relative;
+    group: hover;
+    cursor: pointer;
+}
+
+.iffd-list-title {
+    font-family: var(--font-head);
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+    margin: 0;
+    z-index: 2;
+}
+
+.iffd-list-item:hover .iffd-list-title {
+    color: var(--accent-primary);
+    padding-left: 20px;
+}
+
+.iffd-list-desc {
+    max-width: 400px;
+    font-size: 1rem;
+    color: var(--text-muted);
+    text-align: right;
+    transition: opacity 0.3s ease;
+    opacity: 0.6;
+    z-index: 2;
+}
+
+.iffd-list-item:hover .iffd-list-desc {
+    opacity: 1;
+}
+
+/* Hover Image Reveal Logic */
+.iffd-list-hover-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    filter: grayscale(100%);
+}
+
+.iffd-list-item:hover .iffd-list-hover-img {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* === VERTICAL PROCESS TIMELINE === */
+.iffd-process-section {
+    padding: 150px 0;
+    background: #0A0A0A;
+}
+
+.iffd-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.iffd-timeline-item {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.iffd-timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 45px;
+    top: 80px;
+    bottom: -80px;
+    width: 1px;
+    background: rgba(255,255,255,0.1);
+}
+
+.iffd-timeline-item:last-child::before {
+    display: none;
+}
+
+.iffd-step-num {
+    font-family: var(--font-head);
+    font-size: 5rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.1);
+    line-height: 0.8;
+}
+
+.iffd-step-content {
+    padding-top: 10px;
+}
+
+.iffd-step-title {
+    font-family: var(--font-head);
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.iffd-step-role {
+    color: var(--accent-primary);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.iffd-step-desc {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* === FOOTER OVERRIDE FOR THIS PAGE === */
+.iffd-footer-giant {
+    padding: 150px 24px 50px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.iffd-footer-giant h2 {
+    font-size: clamp(3rem, 12vw, 10rem);
+    margin: 0 0 40px;
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    line-height: 0.9;
+}
+
+.iffd-footer-giant .btn {
+    font-size: 1.5rem;
+    padding: 20px 60px;
+}
+
+/* RESPONSIVE TWEAKS */
+@media (max-width: 768px) {
+    .iffd-text-row {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 0;
+    }
+    .iffd-text-row.right {
+        align-items: flex-end;
+    }
+    .iffd-hero-img-1, .iffd-hero-img-2 {
+        display: none;
+    }
+    .iffd-descriptor {
+        margin-top: 20px;
+        align-self: center;
+        text-align: center;
+    }
+    .iffd-list-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .iffd-list-desc {
+        text-align: left;
+    }
+    .iffd-timeline-item {
+        flex-direction: column;
+    }
+    .iffd-timeline-item::before {
+        display: none;
+    }
 }

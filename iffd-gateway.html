@@ -7,7 +7,8 @@
     <title>Ideabaaz Delhi – Official Creative Industry Partner | IFFD 2026</title>
     <meta name="description"
         content="Ideabaaz Delhi is the official discovery platform for the International Film Festival of Delhi (IFFD) 2026. Register now to showcase your creative vision at Bharat Mandapam.">
-    <meta name="theme-color" content="#030303">
+    <!-- Updated Theme Color for Redesign -->
+    <meta name="theme-color" content="#050505">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,20 +18,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="iffd-body">
 
     <!-- Global Glow Element that follows cursor -->
     <div id="global-glow"></div>
 
-    <!-- NAVBAR -->
+    <!-- NAVBAR (Reused) -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">Ideabaaz</a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#scale">The Scale</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#role">Ideabaaz's Role</a></li>
-                <li><a href="#process">Selection Process</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#process">Process</a></li>
                 <li><a href="#apply" class="btn btn-nav">Register Now</a></li>
             </ul>
             <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -39,541 +39,219 @@
         </div>
     </nav>
 
-    <!-- STICKY HERO WRAPPER -->
-    <div class="sticky-hero-wrapper">
 
-        <!-- HERO SECTION -->
-        <section class="hero sticky-hero" id="hero">
-            <div class="stars-bg"></div>
+    <!-- 1. BOLD TYPOGRAPHY HERO -->
+    <section class="iffd-hero">
+        
+        <!-- Background elements -->
+        <div class="stars-bg" style="opacity: 0.2;"></div>
+        
+        <!-- Abstract Rotating Wireframe Sphere SVG -->
+        <svg class="iffd-floating-asset iffd-wireframe-svg" style="top: 10%; left: 30%; width: 50vw; height: 50vw; animation: spin3D 40s linear infinite;" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="45" />
+            <ellipse cx="50" cy="50" rx="45" ry="15" />
+            <ellipse cx="50" cy="50" rx="15" ry="45" />
+            <path d="M 15 15 Q 50 50 85 85 M 15 85 Q 50 50 85 15" />
+        </svg>
 
-            <div class="hero-content">
-                <div class="hero-badge">Official Discovery Platform — IFFD 2026</div>
-                <h1 class="hero-title">YOUR IDEA BELONGS ON DELHI'S BIGGEST <span class="text-glow-accent">CREATIVE STAGE</span>
-                </h1>
+        <!-- Floating accent images -->
+        <img src="assets/opp_usa_minimal.png" class="iffd-floating-asset iffd-hero-img-1" alt="Festival Spotlight">
+        <img src="assets/opp_usa_minimal.png" class="iffd-floating-asset iffd-hero-img-2" alt="Creative Scene">
 
-                <p class="hero-subtitle">
-                    Ideabaaz Delhi is the official discovery platform for the International Film Festival of Delhi (IFFD) — one of India's most prestigious film and creative industry events.
-                </p>
-                <p class="hero-description">
-                    We are looking for creators and innovators redefining the future of storytelling. Register now to showcase your creative vision at Bharat Mandapam.
-                </p>
+        <!-- Typography -->
+        <div class="iffd-text-row left" style="padding-top: 10vh;">
+            <p class="iffd-descriptor" style="margin-right: 40px; text-align: right;">Official Discovery Platform<br>International Film Festival Delhi 2026</p>
+            <h1 class="iffd-massive-text">YOUR IDEA</h1>
+        </div>
 
-                <div class="hero-cta-group" style="display: flex; gap: 16px; justify-content: center; margin-top: 32px;">
-                    <a href="#apply" class="btn btn-primary">Register Now</a>
-                    <a href="#scale" class="btn btn-outline light">Learn More</a>
-                </div>
+        <div class="iffd-text-row right">
+            <h1 class="iffd-massive-text iffd-hollow-text">BELONGS</h1>
+            <p class="iffd-descriptor" style="margin-left: 40px; text-align: left;"><span class="iffd-accent-color">We are looking for creators</span><br>and innovators redefining the future of storytelling.</p>
+        </div>
+
+        <div class="iffd-text-row center">
+            <h1 class="iffd-massive-text">ON <span class="iffd-accent-color">DELHI'S</span></h1>
+        </div>
+
+        <div class="iffd-text-row left">
+            <p class="iffd-descriptor" style="margin-right: 40px; text-align: right; max-width: 250px;">At Bharat Mandapam.<br>Pitch your vision.</p>
+            <h1 class="iffd-massive-text iffd-hollow-text">BIGGEST STAGE</h1>
+        </div>
+
+        <div class="iffd-hero-desc">
+            We bridge the gap between creative brilliance and commercial success. India's most ambitious startup discovery platform.
+            <div style="margin-top: 30px;">
+                <a href="#apply" class="btn btn-primary" style="padding: 16px 40px; font-size: 1.1rem; text-transform: uppercase;">Register Now</a>
             </div>
+        </div>
 
-            <!-- Inline SVG Earth Globe from index.html -->
-            <div class="earth-container">
-                <svg class="earth-img" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stylized Earth globe illustration">
-                    <defs>
-                        <!-- Globe ocean gradient -->
-                        <radialGradient id="globe-ocean" cx="40%" cy="35%" r="50%">
-                            <stop offset="0%" stop-color="#0F3D91"/>
-                            <stop offset="50%" stop-color="#0A2463"/>
-                            <stop offset="100%" stop-color="#061539"/>
-                        </radialGradient>
+    </section>
 
-                        <!-- Atmospheric outer haze -->
-                        <radialGradient id="atmo-haze" cx="50%" cy="50%" r="50%">
-                            <stop offset="70%" stop-color="rgba(30,80,180,0.12)"/>
-                            <stop offset="85%" stop-color="rgba(30,80,180,0.06)"/>
-                            <stop offset="100%" stop-color="transparent"/>
-                        </radialGradient>
-
-                        <!-- Orange inner glow -->
-                        <radialGradient id="atmo-orange" cx="50%" cy="50%" r="50%">
-                            <stop offset="80%" stop-color="transparent"/>
-                            <stop offset="92%" stop-color="rgba(255,90,31,0.15)"/>
-                            <stop offset="100%" stop-color="transparent"/>
-                        </radialGradient>
-
-                        <!-- Glow filter for atmosphere -->
-                        <filter id="glow-atmo" x="-50%" y="-50%" width="200%" height="200%">
-                            <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur"/>
-                            <feMerge>
-                                <feMergeNode in="blur"/>
-                                <feMergeNode in="SourceGraphic"/>
-                            </feMerge>
-                        </filter>
-
-                        <!-- Glow filter for connection nodes -->
-                        <filter id="glow-node" x="-100%" y="-100%" width="300%" height="300%">
-                            <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
-                            <feMerge>
-                                <feMergeNode in="blur"/>
-                                <feMergeNode in="SourceGraphic"/>
-                            </feMerge>
-                        </filter>
-
-                        <!-- Subtle highlight filter for continents -->
-                        <filter id="continent-soft">
-                            <feGaussianBlur in="SourceGraphic" stdDeviation="0.8"/>
-                        </filter>
-
-                        <!-- Clip path for globe -->
-                        <clipPath id="globe-clip">
-                            <circle cx="250" cy="250" r="155"/>
-                        </clipPath>
-                    </defs>
-
-                    <!-- ===== BACKGROUND STARS ===== -->
-                    <g class="earth-stars" opacity="0.6">
-                        <circle cx="45" cy="60" r="1" fill="#fff"/>
-                        <circle cx="120" cy="35" r="0.8" fill="#fff"/>
-                        <circle cx="80" cy="140" r="1.2" fill="#fff"/>
-                        <circle cx="400" cy="50" r="1" fill="#fff"/>
-                        <circle cx="450" cy="120" r="0.7" fill="#fff"/>
-                        <circle cx="470" cy="80" r="1.1" fill="#fff"/>
-                        <circle cx="30" cy="350" r="0.9" fill="#fff"/>
-                        <circle cx="60" cy="420" r="1" fill="#fff"/>
-                        <circle cx="440" cy="400" r="0.8" fill="#fff"/>
-                        <circle cx="480" cy="330" r="1.2" fill="#fff"/>
-                        <circle cx="200" cy="20" r="0.7" fill="#fff"/>
-                        <circle cx="340" cy="15" r="1" fill="#fff"/>
-                        <circle cx="15" cy="230" r="0.9" fill="#fff"/>
-                        <circle cx="485" cy="240" r="0.8" fill="#fff"/>
-                        <circle cx="100" cy="470" r="1" fill="#fff"/>
-                        <circle cx="380" cy="475" r="0.9" fill="#fff"/>
-                        <circle cx="250" cy="485" r="0.7" fill="#fff"/>
-                        <circle cx="160" cy="480" r="1.1" fill="#fff"/>
-                    </g>
-
-                    <!-- ===== ATMOSPHERIC GLOW (outer) ===== -->
-                    <circle cx="250" cy="250" r="210" fill="url(#atmo-haze)" filter="url(#glow-atmo)"/>
-                    <circle cx="250" cy="250" r="190" fill="url(#atmo-orange)"/>
-
-                    <!-- ===== MAIN GLOBE ===== -->
-                    <circle cx="250" cy="250" r="155" fill="url(#globe-ocean)" stroke="rgba(30,80,180,0.25)" stroke-width="0.5"/>
-
-                    <!-- ===== CONTINENTS (clipped to globe) ===== -->
-                    <g clip-path="url(#globe-clip)">
-                        <!-- Continents SVG Paths from index.html -->
-                        <path d="M155,155 L160,140 L175,130 L195,128 L210,135 L218,145 L225,160 L220,175 L215,185 L205,195 L190,200 L180,195 L170,190 L160,180 L152,168 Z" fill="#1E3A6E" opacity="0.85"/>
-                        <path d="M190,200 L195,210 L198,220 L195,230 L190,235" fill="none" stroke="#1E3A6E" stroke-width="6" opacity="0.75"/>
-                        <path d="M195,240 L205,235 L215,240 L225,255 L230,275 L228,295 L220,315 L210,335 L200,350 L190,355 L185,345 L182,325 L185,305 L188,285 L190,265 L192,250 Z" fill="#2C4F8A" opacity="0.8"/>
-                        <path d="M265,130 L275,125 L290,128 L300,135 L305,140 L298,150 L290,155 L280,158 L270,155 L262,148 L260,140 Z" fill="#1E3A6E" opacity="0.85"/>
-                        <path d="M275,170 L290,165 L305,170 L315,185 L320,205 L318,230 L312,255 L305,275 L295,290 L285,295 L278,285 L272,265 L268,240 L265,215 L268,195 L272,180 Z" fill="#2C4F8A" opacity="0.8"/>
-                        <path d="M305,110 L320,105 L340,108 L358,115 L370,125 L378,140 L382,158 L380,175 L372,190 L358,198 L345,195 L335,188 L325,178 L315,165 L308,150 L305,135 Z" fill="#1E3A6E" opacity="0.85"/>
-                        <path d="M335,188 L340,200 L342,215 L338,230 L330,240 L322,235 L318,220 L320,205 L325,195 Z" fill="#2C4F8A" opacity="0.9"/>
-                        <path d="M365,290 L380,285 L395,290 L400,302 L395,315 L382,320 L370,315 L362,305 L363,295 Z" fill="#1E3A6E" opacity="0.75"/>
-                        
-                        <g stroke="rgba(120,160,220,0.12)" stroke-width="0.5" fill="none" stroke-dasharray="4,6">
-                            <ellipse cx="250" cy="160" rx="152" ry="20"/>
-                            <ellipse cx="250" cy="200" rx="155" ry="30"/>
-                            <line x1="95" y1="250" x2="405" y2="250"/>
-                            <ellipse cx="250" cy="300" rx="155" ry="30"/>
-                            <ellipse cx="250" cy="340" rx="152" ry="20"/>
-                        </g>
-
-                        <g stroke="rgba(120,160,220,0.08)" stroke-width="0.5" fill="none" stroke-dasharray="3,8">
-                            <ellipse cx="250" cy="250" rx="40" ry="155"/>
-                            <ellipse cx="250" cy="250" rx="90" ry="155"/>
-                            <ellipse cx="250" cy="250" rx="130" ry="155"/>
-                        </g>
-                    </g>
-
-                    <!-- ===== GLOBE SPECULAR HIGHLIGHT ===== -->
-                    <ellipse cx="215" cy="195" rx="80" ry="65" fill="rgba(255,255,255,0.04)"/>
-
-                    <!-- ===== CONNECTION NODES (cities/hubs) ===== -->
-                    <g class="earth-connection-nodes">
-                        <!-- Delhi (adding it as prominent node) -->
-                        <circle class="earth-node-dot" cx="330" cy="205" r="4.5" fill="#FF5A1F" filter="url(#glow-node)" opacity="0.9">
-                            <animate attributeName="r" values="4.5;6;4.5" dur="2s" repeatCount="indefinite" />
-                        </circle>
-                        <circle class="earth-node-dot" cx="328" cy="225" r="3.5" fill="#FF5A1F" filter="url(#glow-node)"/>
-                        <circle class="earth-node-dot" cx="332" cy="245" r="3" fill="#FF5A1F" filter="url(#glow-node)"/>
-                        <circle class="earth-node-dot" cx="158" cy="175" r="3" fill="#FF5A1F" filter="url(#glow-node)"/>
-                        <circle class="earth-node-dot" cx="272" cy="140" r="3" fill="#FF5A1F" filter="url(#glow-node)"/>
-                        <circle class="earth-node-dot" cx="358" cy="238" r="2.8" fill="#FF5A1F" filter="url(#glow-node)"/>
-                        <circle class="earth-node-dot" cx="305" cy="200" r="2.8" fill="#FF5A1F" filter="url(#glow-node)"/>
-                        <circle class="earth-node-dot" cx="378" cy="160" r="2.8" fill="#FF5A1F" filter="url(#glow-node)"/>
-                    </g>
-
-                    <!-- ===== CONNECTION LINES ===== -->
-                    <g fill="none" stroke="rgba(255,90,31,0.25)" stroke-width="0.8" stroke-dasharray="3,4">
-                        <path d="M330,205 Q250,120 158,175"/>
-                        <path d="M330,205 Q300,160 272,140"/>
-                        <path d="M330,205 Q345,220 358,238"/>
-                        <path d="M272,140 Q210,100 158,175"/>
-                        <path d="M378,160 Q375,200 358,238"/>
-                    </g>
-
-                    <!-- ===== ORBITAL PATHS ===== -->
-                    <g class="earth-orbit-group">
-                        <ellipse class="earth-orbit-path" cx="250" cy="250" rx="210" ry="70"
-                                 transform="rotate(-20,250,250)"
-                                 fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.7"
-                                 stroke-dasharray="6,8"/>
-                        <circle class="earth-satellite earth-sat-1" cx="460" cy="250" r="2.5" fill="#fff" opacity="0.7">
-                            <animateMotion dur="18s" repeatCount="indefinite" rotate="auto">
-                                <mpath href="#orbit-motion-1"/>
-                            </animateMotion>
-                        </circle>
-
-                        <ellipse class="earth-orbit-path" cx="250" cy="250" rx="235" ry="55"
-                                 transform="rotate(35,250,250)"
-                                 fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"
-                                 stroke-dasharray="4,10"/>
-                        <circle class="earth-satellite earth-sat-2" cx="250" cy="195" r="2" fill="rgba(255,90,31,0.6)" opacity="0.8">
-                            <animateMotion dur="24s" repeatCount="indefinite" rotate="auto">
-                                <mpath href="#orbit-motion-2"/>
-                            </animateMotion>
-                        </circle>
-                    </g>
-
-                    <path id="orbit-motion-1"
-                          d="M460,250 A210,70 0 1 1 40,250 A210,70 0 1 1 460,250"
-                          transform="rotate(-20,250,250)" fill="none" stroke="none"/>
-                    <path id="orbit-motion-2"
-                          d="M485,250 A235,55 0 1 1 15,250 A235,55 0 1 1 485,250"
-                          transform="rotate(35,250,250)" fill="none" stroke="none"/>
-
-                    <!-- ===== GLOBE RIM LIGHT ===== -->
-                    <circle cx="250" cy="250" r="155" fill="none" stroke="rgba(100,160,255,0.1)" stroke-width="1.5"/>
+    <!-- 2. THE SCALE (Massive Numbers Grid) -->
+    <section class="iffd-scale-section" id="scale">
+        <div class="iffd-stat-grid">
+            
+            <div class="iffd-stat-item">
+                <!-- Abstract geometric SVG behind number -->
+                <svg viewBox="0 0 100 100" class="iffd-wireframe-svg" style="transform: rotate(15deg);">
+                    <polygon points="50,5 95,95 5,95" />
                 </svg>
+                <div class="iffd-stat-number">671</div>
+                <div class="iffd-stat-label">Global<br>Speakers</div>
             </div>
 
-        </section>
+            <div class="iffd-stat-item">
+                <svg viewBox="0 0 100 100" class="iffd-wireframe-svg" style="transform: rotate(-10deg);">
+                    <rect x="10" y="10" width="80" height="80" />
+                </svg>
+                <div class="iffd-stat-number">389</div>
+                <div class="iffd-stat-label">Global<br>Media</div>
+            </div>
 
-        <!-- CONTENT OVERLAYS HERO ON SCROLL -->
-        <div class="content-overlay">
+            <div class="iffd-stat-item">
+                <svg viewBox="0 0 100 100" class="iffd-wireframe-svg" style="transform: rotate(45deg);">
+                    <circle cx="50" cy="50" r="40" />
+                </svg>
+                <div class="iffd-stat-number">128</div>
+                <div class="iffd-stat-label">Award<br>Categories</div>
+            </div>
 
-            <!-- 2. THE SCALE OF IFFD (Using about-stats style) -->
-            <section class="about" id="scale" style="padding-bottom: 60px;">
-                <div class="container">
-                    <div class="section-header center">
-                        <h2>The Scale of IFFD</h2>
-                        <p>Join the revolution at Bharat Mandapam, New Delhi.</p>
-                    </div>
-                    
-                    <div class="about-grid" style="display: flex; justify-content: center; flex-direction: column; align-items: center; width: 100%;">
-                        <div class="about-stats" style="flex-wrap: wrap; justify-content: center; gap: 60px; border-top: none; margin-top: 0; padding-top: 20px;">
-                            <div class="statBox" style="text-align: center;">
-                                <h4>671+</h4><span>Global Speakers</span>
-                            </div>
-                            <div class="statBox" style="text-align: center;">
-                                <h4>389+</h4><span>Global Media</span>
-                            </div>
-                            <div class="statBox" style="text-align: center;">
-                                <h4>128+</h4><span>Award Categories</span>
-                            </div>
-                            <div class="statBox" style="text-align: center;">
-                                <h4>85+</h4><span>Global Partners</span>
-                            </div>
-                        </div>
-                        
-                        <div class="about-stats" style="flex-wrap: wrap; justify-content: center; gap: 60px; border-top: none; margin-top: 0; padding-top: 20px;">
-                            <div class="statBox" style="text-align: center; color: white;">
-                                <h4 style="color: white">7-Day</h4><span>Festival</span>
-                            </div>
-                            <div class="statBox" style="text-align: center; color: white;">
-                                <h4 style="color: white">2,098+</h4><span>Films Submitted</span>
-                            </div>
-                        </div>
-                    </div>
+            <div class="iffd-stat-item" style="margin-top: 40px;">
+                <div class="iffd-stat-number" style="color: #fff;">2K+</div>
+                <div class="iffd-stat-label">Films<br>Submitted</div>
+            </div>
+
+            <div class="iffd-stat-item" style="margin-top: 40px;">
+                <div class="iffd-stat-number" style="color: #fff;">₹42Cr</div>
+                <div class="iffd-stat-label">Investments<br>Season 1</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 3. ECHOES IN MOTION (Center Piece Parallax) -->
+    <section class="iffd-center-feature">
+        <!-- Background Grid SVG -->
+        <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.05;" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid)" />
+        </svg>
+
+        <div class="iffd-feature-text" style="top: 15%;"><h2>VISION LEAPS</h2></div>
+        
+        <div class="iffd-feature-img-wrapper">
+            <img src="assets/opp_usa_minimal.png" class="iffd-feature-img" alt="Vision feature">
+            <div class="iffd-feature-badge">Rising Star</div>
+        </div>
+
+        <div class="iffd-feature-text" style="bottom: 15%;"><h2 class="iffd-accent-color">ECHOES IN MOTION</h2></div>
+    </section>
+
+    <!-- 4. ACTIVITIES & BENEFITS (Asymmetrical List Hover) -->
+    <section class="iffd-list-section" id="activities">
+        <div class="iffd-list-container">
+            <div style="margin-bottom: 80px; padding-bottom: 20px; border-bottom: 2px solid var(--accent-primary); width: fit-content;">
+                <h3 style="font-family: var(--font-head); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--accent-primary); margin: 0;">What You Get</h3>
+            </div>
+
+            <div class="iffd-list-item">
+                <img src="assets/opp_usa_minimal.png" class="iffd-list-hover-img" alt="Screening">
+                <h2 class="iffd-list-title">FILM SCREENINGS</h2>
+                <p class="iffd-list-desc">Showcase your best work to global audiences and film enthusiasts at Bharat Mandapam's premier theaters.</p>
+            </div>
+
+            <div class="iffd-list-item">
+                <img src="assets/opp_usa_minimal.png" class="iffd-list-hover-img" alt="Masterclasses" style="transform: translate(-30%, -60%) scale(0.8);">
+                <h2 class="iffd-list-title">MASTERCLASSES</h2>
+                <p class="iffd-list-desc">Learn directly from the titans. High-level panels with the best minds in film, tech, and creative business.</p>
+            </div>
+
+            <div class="iffd-list-item">
+                <img src="assets/opp_usa_minimal.png" class="iffd-list-hover-img" alt="CineXchange" style="transform: translate(-70%, -40%) scale(0.8);">
+                <h2 class="iffd-list-title">CINEXCHANGE</h2>
+                <p class="iffd-list-desc">The ultimate networking hub. Direct exposure and pitch sessions with high-ticket creative investors.</p>
+            </div>
+
+            <div class="iffd-list-item">
+                <img src="assets/opp_usa_minimal.png" class="iffd-list-hover-img" alt="Expo">
+                <h2 class="iffd-list-title">CINEVERSE EXPO</h2>
+                <p class="iffd-list-desc">Connect with cutting-edge tools, VFX innovators, and elite lifestyle brands ready for partnership.</p>
+            </div>
+
+            <div class="iffd-list-item">
+                <h2 class="iffd-list-title">MEDIA SPOTLIGHT</h2>
+                <p class="iffd-list-desc">Broadcast across Zee Network's 9 channels. National and international PR coverage.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. PROCESS (Minimalist Timeline) -->
+    <section class="iffd-process-section" id="process">
+        <div class="iffd-timeline">
+            <div style="text-align: center; margin-bottom: 100px;">
+                <h2 style="font-family: var(--font-head); font-size: clamp(2.5rem, 6vw, 4rem); text-transform: uppercase;">The Selection</h2>
+            </div>
+
+            <div class="iffd-timeline-item">
+                <div class="iffd-step-num">01</div>
+                <div class="iffd-step-content">
+                    <span class="iffd-step-role">Share Your Idea</span>
+                    <h3 class="iffd-step-title">Application</h3>
+                    <p class="iffd-step-desc">Share your creative project, tech tool, or service through our secure portal detailing your vision and market potential.</p>
                 </div>
-            </section>
+            </div>
 
-            <!-- 3. WHAT PARTICIPANTS GET & ACTIVITIES (Using 5-Grid Bento) -->
-            <section class="why-participate section-padding" id="benefits">
-                <div class="container">
-                    <div class="section-header center">
-                        <h2>What Selected Participants Get</h2>
-                        <p>Not Just a Festival, A Creative Revolution</p>
-                    </div>
-
-                    <div class="bento-5-grid">
-                        
-                        <!-- 1. Global Stage (Wide) -->
-                        <div class="bento-card hover-glow bento-wide">
-                            <div class="bento-content">
-                                <h3>Global Stage & Film Screenings</h3>
-                                <p>Showcase your best work to global audiences and film enthusiasts at Bharat Mandapam.</p>
-                            </div>
-                            <!-- Embed network-img SVG from index.html -->
-                            <div class="bento-image-wrapper network-img">
-                                <svg viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
-                                    <defs>
-                                        <radialGradient id="globeGrad" cx="50%" cy="45%" r="50%">
-                                            <stop offset="0%" stop-color="#2C3140"/>
-                                            <stop offset="70%" stop-color="#1E222D"/>
-                                            <stop offset="100%" stop-color="#0B0E14"/>
-                                        </radialGradient>
-                                        <radialGradient id="globeGlow" cx="50%" cy="50%" r="55%">
-                                            <stop offset="0%" stop-color="rgba(255,90,31,0.15)"/>
-                                            <stop offset="100%" stop-color="rgba(255,90,31,0)"/>
-                                        </radialGradient>
-                                    </defs>
-                                    <circle cx="100" cy="75" r="60" fill="url(#globeGlow)"/>
-                                    <circle cx="100" cy="75" r="42" fill="url(#globeGrad)" stroke="#454C5F" stroke-width="1.5"/>
-                                    <path d="M82 58 C85 55, 92 54, 95 57 C97 59, 96 63, 93 65 C90 67, 84 66, 82 63 Z" fill="#454C5F" opacity="0.7"/>
-                                    <ellipse cx="100" cy="75" rx="56" ry="20" stroke="#454C5F" stroke-width="0.8" stroke-dasharray="4 6" opacity="0.5" transform="rotate(-25 100 75)"/>
-                                    <circle cx="30" cy="25" r="4" fill="#1E222D" stroke="#6A758F" stroke-width="1.2"/>
-                                    <line x1="82" y1="58" x2="30" y2="25" stroke="#454C5F" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.6"/>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <!-- 2. Masterclasses & Panels -->
-                        <div class="bento-card hover-glow">
-                            <div class="bento-content">
-                                <h3>Masterclasses & Panels</h3>
-                                <p>Learn from the best minds in film, tech, and creative business.</p>
-                            </div>
-                            <div class="bento-image-wrapper">
-                                <svg viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
-                                    <defs>
-                                        <radialGradient id="mentorGlow" cx="50%" cy="50%" r="50%">
-                                            <stop offset="0%" stop-color="rgba(255,90,31,0.12)"/>
-                                            <stop offset="100%" stop-color="rgba(255,90,31,0)"/>
-                                        </radialGradient>
-                                    </defs>
-                                    <circle cx="75" cy="75" r="65" fill="url(#mentorGlow)"/>
-                                    <circle cx="75" cy="65" r="14" fill="#1E222D" stroke="#6A758F" stroke-width="1.5"/>
-                                    <circle cx="75" cy="59" r="4.5" fill="#9AA4B8"/>
-                                    <path d="M66 74 Q66 67, 75 67 Q84 67, 84 74" fill="#9AA4B8" opacity="0.8"/>
-                                    <circle cx="38" cy="40" r="10" fill="#1E222D" stroke="#454C5F" stroke-width="1.2"/>
-                                    <circle cx="112" cy="40" r="10" fill="#1E222D" stroke="#454C5F" stroke-width="1.2"/>
-                                    <line x1="75" y1="68" x2="38" y2="42" stroke="#454C5F" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.7"/>
-                                    <line x1="75" y1="68" x2="112" y2="42" stroke="#454C5F" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.7"/>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <!-- 3. Investor Access / CineXchange (Tall) -->
-                        <div class="bento-card hover-glow bento-tall titan-interactive">
-                            <div class="bento-content">
-                                <h3>CineXchange & Investor Access</h3>
-                                <p>The ultimate networking hub for film deals and creative collaborations. Pitch to high-ticket investors.</p>
-                            </div>
-                            <!-- Embed tall-img SVG from index.html -->
-                            <div class="bento-image-wrapper tall-img">
-                                <svg viewBox="0 0 150 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
-                                    <defs>
-                                        <linearGradient id="spotlightC" x1="75" y1="0" x2="75" y2="130" gradientUnits="userSpaceOnUse">
-                                            <stop offset="0%" stop-color="rgba(255,90,31,0.5)"/>
-                                            <stop offset="60%" stop-color="rgba(255,90,31,0.08)"/>
-                                            <stop offset="100%" stop-color="rgba(255,90,31,0)"/>
-                                        </linearGradient>
-                                    </defs>
-                                    <!-- Simple spotlight & stage representation -->
-                                    <polygon points="75,2 60,130 90,130" fill="url(#spotlightC)"/>
-                                    <path d="M15 155 L135 155 L125 170 L25 170 Z" fill="#2C3140"/>
-                                    <rect x="65" y="125" width="20" height="30" rx="2" fill="#1E222D"/>
-                                    <!-- Figure -->
-                                    <circle cx="75" cy="98" r="7" fill="#9AA4B8"/>
-                                    <path d="M65 122 L65 108 L85 108 L85 122" fill="#6A758F"/>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <!-- 4. CineVerse Expo & Brand Partnerships -->
-                        <div class="bento-card hover-glow">
-                            <div class="bento-content">
-                                <h3>CineVerse Expo & Brands</h3>
-                                <p>Direct exposure to cutting-edge tools, marketing agencies, and lifestyle brands.</p>
-                            </div>
-                            <div class="bento-image-wrapper">
-                                <svg viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
-                                    <defs>
-                                        <radialGradient id="ecoGlow" cx="50%" cy="50%" r="50%">
-                                            <stop offset="0%" stop-color="rgba(255,90,31,0.1)"/>
-                                            <stop offset="100%" stop-color="rgba(255,90,31,0)"/>
-                                        </radialGradient>
-                                    </defs>
-                                    <circle cx="75" cy="75" r="68" fill="url(#ecoGlow)"/>
-                                    <path d="M75 52 L90 62 L90 82 L75 92 L60 82 L60 62 Z" fill="#1E222D" stroke="#6A758F" stroke-width="1.5"/>
-                                    <!-- target/hexicons -->
-                                    <path d="M38 25 L50 32 L50 46 L38 53 L26 46 L26 32 Z" fill="#1E222D" stroke="#454C5F" stroke-width="1.2"/>
-                                    <path d="M112 28 L124 35 L124 49 L112 56 L100 49 L100 35 Z" fill="#1E222D" stroke="#454C5F" stroke-width="1.2"/>
-                                    <path d="M75 55 Q60 50, 42 38" stroke="#454C5F" stroke-width="1" fill="none" stroke-dasharray="3 3" opacity="0.6"/>
-                                    <path d="M75 55 Q90 50, 112 42" stroke="#454C5F" stroke-width="1" fill="none" stroke-dasharray="3 3" opacity="0.6"/>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <!-- 5. Media Spotlight (Wide) -->
-                        <div class="bento-card hover-glow bento-wide tv-program-card">
-                            <div class="bento-content">
-                                <h3>Media Spotlight</h3>
-                                <p>National and international PR coverage to ensure your story starts in Delhi and reaches the world.</p>
-                            </div>
-                            <div class="bento-image-wrapper tv-img">
-                                <svg viewBox="0 0 250 150" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
-                                    <rect x="42" y="24" width="166" height="98" rx="8" fill="#2C3140" stroke="#454C5F" stroke-width="1.2"/>
-                                    <rect x="50" y="30" width="150" height="86" rx="4" fill="#1E222D"/>
-                                    <circle cx="125" cy="68" r="5" fill="#6A758F"/>
-                                    <rect x="170" y="36" width="22" height="8" rx="2" fill="rgba(255,90,31,0.25)"/>
-                                </svg>
-                            </div>
-                        </div>
-
-                    </div>
+            <div class="iffd-timeline-item">
+                <div class="iffd-step-num">02</div>
+                <div class="iffd-step-content">
+                    <span class="iffd-step-role">Jury Review</span>
+                    <h3 class="iffd-step-title">Screening</h3>
+                    <p class="iffd-step-desc">Our esteemed jury of industry veterans will review all submissions to ensure alignment with IFFD’s vision of innovation.</p>
                 </div>
-            </section>
+            </div>
 
-            <!-- 4. IDEABAAZ'S ROLE (Using About Concept Animation) -->
-            <section class="about" id="role">
-                <div class="container">
-                    <div class="about-grid">
-                        <div class="about-text">
-                            <h2>Ideabaaz Is Your Gateway Into IFFD</h2>
-                            <p>We bridge the gap between creative brilliance and commercial success. India's most ambitious startup discovery platform, broadcast across Zee Network's 9 channels and backed by Kuberans Tech Ventures.</p>
-                            
-                            <ul style="list-style-type: none; padding: 0; margin-top: 24px; font-size: 1.1rem; color: var(--text-muted);">
-                                <li style="margin-bottom: 12px;"><strong style="color: var(--text-main);">✦ Selection:</strong> Expert vetting of applications for quality.</li>
-                                <li style="margin-bottom: 12px;"><strong style="color: var(--text-main);">✦ Preparation:</strong> Mentorship on pitching and scaling ideas.</li>
-                                <li style="margin-bottom: 12px;"><strong style="color: var(--text-main);">✦ Exposure:</strong> Direct pitching to investors, brands & distributors.</li>
-                                <li style="margin-bottom: 12px;"><strong style="color: var(--text-main);">✦ Impact:</strong> Transforming passion projects into scalable businesses.</li>
-                            </ul>
-                            
-                            <div class="about-stats" style="margin-top: 32px;">
-                                <div class="statBox" style="text-align: left;">
-                                    <h4>₹42Cr+</h4><span>Investments<br>(Season 1)</span>
-                                </div>
-                                <div class="statBox" style="text-align: left;">
-                                    <h4>9</h4><span>Zee Network<br>Channels</span>
-                                </div>
-                                <div class="statBox" style="text-align: left;">
-                                    <h4>78</h4><span>Featured<br>Startups</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Concept Animation -->
-                        <div class="about-visual">
-                            <div class="animated-concept">
-                                <div class="concept-core"></div>
-                                <div class="concept-ring ring-1"></div>
-                                <div class="concept-ring ring-2"></div>
-                                <div class="concept-ring ring-3"></div>
-                                <div class="concept-particle p-1"></div>
-                                <div class="concept-particle p-2"></div>
-                                <div class="concept-particle p-3"></div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="iffd-timeline-item">
+                <div class="iffd-step-num">03</div>
+                <div class="iffd-step-content">
+                    <span class="iffd-step-role">Shortlist Invited</span>
+                    <h3 class="iffd-step-title">Selection</h3>
+                    <p class="iffd-step-desc">Shortlisted candidates will be officially invited to feature their work and prepare for the national showcase.</p>
                 </div>
-            </section>
+            </div>
 
-            <!-- 5. SELECTION PROCESS & WHO SHOULD APPLY (Cascading Cards) -->
-            <section class="how-it-works section-padding" id="process">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>Who Should Apply & The Selection Process</h2>
-                        <p>We are looking for writers, directors, indie producers, tech builders, VR/AR innovators, and marketing agencies.</p>
-                    </div>
-
-                    <div class="cascading-cards-container">
-                        <div class="cascade-card card-dark hover-glow">
-                            <div class="card-num">Step 01</div>
-                            <div class="card-main">
-                                <h3>Online Application</h3>
-                                <p class="card-role">Share Your Idea</p>
-                            </div>
-                            <div class="card-footer">
-                                Share your creative project, tech tool, or service through our secure portal.
-                            </div>
-                        </div>
-
-                        <div class="cascade-card card-blue hover-glow card-offset-1">
-                            <div class="card-num">Step 02</div>
-                            <div class="card-main">
-                                <h3>Expert Screening</h3>
-                                <p class="card-role">Jury Review</p>
-                            </div>
-                            <div class="card-footer">
-                                Our esteemed jury will review all submissions to ensure alignment with IFFD’s vision.
-                            </div>
-                        </div>
-
-                        <div class="cascade-card card-blue hover-glow card-offset-2">
-                            <div class="card-num">Step 03</div>
-                            <div class="card-main">
-                                <h3>Selection Notice</h3>
-                                <p class="card-role">Shortlist Invited</p>
-                            </div>
-                            <div class="card-footer">
-                                Shortlisted candidates will be invited to feature their work and prepare for the showcase.
-                            </div>
-                        </div>
-
-                        <div class="cascade-card card-blue hover-glow card-offset-3">
-                            <div class="card-num">Step 04</div>
-                            <div class="card-main">
-                                <h3>The Big Pitch</h3>
-                                <p class="card-role">Live at IFFD</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#apply" class="card-link">Register Now →</a>
-                                <br><br>
-                                Pitch your innovation live at Bharat Mandapam for networking, funding, and growth opportunities.
-                            </div>
-                        </div>
-
-                    </div>
+            <div class="iffd-timeline-item">
+                <div class="iffd-step-num">04</div>
+                <div class="iffd-step-content">
+                    <span class="iffd-step-role">Live at IFFD</span>
+                    <h3 class="iffd-step-title">The Big Pitch</h3>
+                    <p class="iffd-step-desc">Pitch your innovation live at Bharat Mandapam for networking, funding, and international media exposure.</p>
                 </div>
-            </section>
+            </div>
 
-            <!-- FINAL CALL TO ACTION -->
-            <section class="section-padding" style="background: var(--bg-card); text-align: center; border-bottom: 1px solid var(--border-dark);">
-                <div class="container">
-                    <h2 style="font-size: 3rem; margin-bottom: 16px;">YOUR STORY STARTS IN DELHI.</h2>
-                    <h2 style="font-size: 3rem; color: var(--accent-primary); margin-bottom: 24px;">WILL YOU BE THERE?</h2>
-                    <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 40px; font-size: 1.1rem;">
-                        Join the next generation of creative minds and innovators. Don't miss this opportunity to be at the heart of India's biggest film and creative industry event.
-                    </p>
-                    <a href="#apply" class="btn btn-primary" style="font-size: 1.2rem; padding: 16px 40px;">Register Now</a>
-                </div>
-            </section>
+        </div>
+    </section>
 
-            <!-- FOOTER -->
-            <footer class="footer">
-                <div class="container">
-                    <div class="footer-top">
-                        <div class="footer-brand">
-                            <h2>Ideabaaz</h2>
-                            <p>National Stage for Indian Startups</p>
-                            <p class="footer-desc mt-4 text-muted">Empowering the next generation of founders to build
-                                category-defining companies through unparalleled media exposure and elite investor
-                                access.</p>
-                        </div>
-                        <div class="footer-links">
-                            <div class="link-col">
-                                <h4>Platform</h4>
-                                <a href="index.html">Home</a>
-                                <a href="index.html#opportunities">Opportunities</a>
-                                <a href="index.html#why">Why Participate</a>
-                            </div>
-                            <div class="link-col">
-                                <h4>IFFD 2026</h4>
-                                <a href="#scale">The Scale</a>
-                                <a href="#benefits">Benefits</a>
-                                <a href="#process">Process</a>
-                            </div>
-                            <div class="link-col">
-                                <h4>Legal</h4>
-                                <a href="#">Privacy Policy</a>
-                                <a href="#">Terms of Service</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-bottom">
-                        <p>&copy; 2026 Ideabaaz. All rights reserved.</p>
-                        <div class="footer-partners">
-                            <span>Official Partner for</span>
-                            <strong>IFFD 2026</strong>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div> <!-- End Content Overlay -->
-    </div> <!-- End Sticky Wrapper -->
+    <!-- 6. GIANT FOOTER CTA -->
+    <section class="iffd-footer-giant">
+        <p class="iffd-descriptor" style="margin: 0 auto 20px; text-align: center;">YOUR STORY STARTS IN DELHI</p>
+        <h2>WILL YOU<br><span class="iffd-hollow-text" style="-webkit-text-stroke: 1px var(--accent-primary);">BE THERE?</span></h2>
+        
+        <div style="margin: 60px 0;">
+            <a href="#apply" class="btn btn-primary" style="font-family: var(--font-head); text-transform: uppercase; letter-spacing: 0.1em;">Register Now</a>
+        </div>
+
+        <div style="margin-top: 100px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; color: var(--text-muted); font-size: 0.9rem;">
+            <div>&copy; 2026 Ideabaaz</div>
+            <div>Official Discovery Partner IFFD</div>
+            <div><a href="index.html">Back to Main Site</a></div>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
-
 </html>
