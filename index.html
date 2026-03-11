@@ -293,7 +293,242 @@
 
                     <div class="opp-grid">
                         <div class="opp-card usa-card hover-glow">
-<img src="assets/opp_usa_minimal.png" alt="USA Opportunity" class="opp-bg">
+                            <div class="opp-img-wrap"><svg class="opp-bg" style="width:100%;height:100%;object-fit:cover;" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-label="New York City skyline illustration">
+  <defs>
+    <linearGradient id="usa-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#070A10"/>
+      <stop offset="40%" stop-color="#0B0E14"/>
+      <stop offset="75%" stop-color="#121620"/>
+      <stop offset="100%" stop-color="#1A1F2E"/>
+    </linearGradient>
+    <radialGradient id="usa-horizon-glow" cx="50%" cy="85%" r="50%" fx="50%" fy="85%">
+      <stop offset="0%" stop-color="rgba(255,90,31,0.18)"/>
+      <stop offset="40%" stop-color="rgba(255,90,31,0.08)"/>
+      <stop offset="100%" stop-color="rgba(255,90,31,0)"/>
+    </radialGradient>
+    <linearGradient id="usa-water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0E1219"/>
+      <stop offset="100%" stop-color="#080B10"/>
+    </linearGradient>
+    <linearGradient id="usa-bldg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E222D"/>
+      <stop offset="100%" stop-color="#161A24"/>
+    </linearGradient>
+    <linearGradient id="usa-bldg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2C3140"/>
+      <stop offset="100%" stop-color="#1E222D"/>
+    </linearGradient>
+    <filter id="usa-star-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="usa-soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="usa-win-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="0.8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="usa-reflect-fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="white" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="usa-reflect-mask">
+      <rect x="0" y="310" width="600" height="90" fill="url(#usa-reflect-fade)"/>
+    </mask>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="600" height="400" fill="url(#usa-sky)"/>
+
+  <!-- Stars -->
+  <g filter="url(#usa-star-glow)" opacity="0.7">
+    <circle cx="45" cy="28" r="1" fill="#9AA4B8"/>
+    <circle cx="120" cy="55" r="0.7" fill="#6A758F"/>
+    <circle cx="180" cy="18" r="1.2" fill="#9AA4B8"/>
+    <circle cx="250" cy="42" r="0.8" fill="#6A758F"/>
+    <circle cx="310" cy="15" r="1" fill="#9AA4B8"/>
+    <circle cx="370" cy="60" r="0.6" fill="#454C5F"/>
+    <circle cx="420" cy="25" r="1.1" fill="#9AA4B8"/>
+    <circle cx="480" cy="48" r="0.7" fill="#6A758F"/>
+    <circle cx="530" cy="20" r="0.9" fill="#9AA4B8"/>
+    <circle cx="570" cy="65" r="0.5" fill="#454C5F"/>
+    <circle cx="75" cy="75" r="0.6" fill="#454C5F"/>
+    <circle cx="155" cy="90" r="0.5" fill="#454C5F"/>
+    <circle cx="340" cy="80" r="0.8" fill="#6A758F"/>
+    <circle cx="500" cy="85" r="0.6" fill="#454C5F"/>
+    <circle cx="210" cy="70" r="0.9" fill="#6A758F"/>
+    <circle cx="450" cy="40" r="0.7" fill="#6A758F"/>
+    <circle cx="30" cy="100" r="0.6" fill="#454C5F"/>
+    <circle cx="290" cy="95" r="0.5" fill="#454C5F"/>
+  </g>
+
+  <!-- Horizon glow -->
+  <rect width="600" height="400" fill="url(#usa-horizon-glow)"/>
+  <ellipse cx="300" cy="280" rx="280" ry="30" fill="rgba(255,90,31,0.06)" filter="url(#usa-soft-glow)"/>
+
+  <!-- Far background buildings -->
+  <g opacity="0.4">
+    <rect x="20" y="220" width="18" height="70" fill="#161A24"/>
+    <rect x="42" y="230" width="14" height="60" fill="#161A24"/>
+    <rect x="60" y="210" width="20" height="80" fill="#161A24"/>
+    <rect x="520" y="225" width="16" height="65" fill="#161A24"/>
+    <rect x="540" y="215" width="22" height="75" fill="#161A24"/>
+    <rect x="566" y="235" width="18" height="55" fill="#161A24"/>
+  </g>
+
+  <!-- Mid background buildings -->
+  <g opacity="0.6">
+    <rect x="85" y="200" width="22" height="90" fill="#1A1E28"/>
+    <rect x="110" y="215" width="16" height="75" fill="#1A1E28"/>
+    <rect x="470" y="205" width="20" height="85" fill="#1A1E28"/>
+    <rect x="495" y="220" width="18" height="70" fill="#1A1E28"/>
+  </g>
+
+  <!-- Main skyline -->
+  <g>
+    <!-- Left cluster -->
+    <rect x="130" y="195" width="28" height="95" fill="url(#usa-bldg1)" rx="1"/>
+    <rect x="130" y="195" width="28" height="4" fill="#2C3140"/>
+    <rect x="162" y="210" width="24" height="80" fill="url(#usa-bldg1)" rx="1"/>
+    <rect x="166" y="200" width="16" height="90" fill="url(#usa-bldg2)" rx="1"/>
+
+    <!-- Tall slim tower -->
+    <rect x="192" y="170" width="20" height="120" fill="url(#usa-bldg2)" rx="1"/>
+    <rect x="199" y="165" width="6" height="5" fill="#2C3140"/>
+    <rect x="201" y="155" width="2" height="10" fill="#454C5F"/>
+
+    <!-- Art deco tower -->
+    <rect x="218" y="185" width="26" height="105" fill="url(#usa-bldg1)" rx="1"/>
+    <polygon points="218,185 231,160 244,185" fill="#2C3140"/>
+    <rect x="229" y="150" width="4" height="10" fill="#454C5F"/>
+    <rect x="230" y="143" width="2" height="7" fill="#6A758F"/>
+
+    <!-- Empire State-like -->
+    <rect x="250" y="165" width="32" height="125" fill="url(#usa-bldg2)" rx="1"/>
+    <rect x="258" y="155" width="16" height="10" fill="#2C3140"/>
+    <rect x="262" y="140" width="8" height="15" fill="#2C3140"/>
+    <rect x="264" y="125" width="4" height="15" fill="#454C5F"/>
+    <rect x="265" y="115" width="2" height="10" fill="#6A758F"/>
+
+    <!-- Mid cluster -->
+    <rect x="288" y="200" width="22" height="90" fill="url(#usa-bldg1)" rx="1"/>
+    <rect x="314" y="195" width="18" height="95" fill="url(#usa-bldg1)" rx="1"/>
+
+    <!-- One World Trade Center (tallest) -->
+    <polygon points="340,100 360,100 368,290 332,290" fill="url(#usa-bldg2)"/>
+    <polygon points="340,100 350,100 350,290 340,290" fill="#2C3140" opacity="0.5"/>
+    <rect x="348" y="80" width="4" height="20" fill="#454C5F"/>
+    <rect x="349" y="65" width="2" height="15" fill="#6A758F"/>
+    <circle cx="350" cy="65" r="2" fill="#FF5A1F" opacity="0.6" filter="url(#usa-star-glow)"/>
+
+    <!-- Right of WTC -->
+    <rect x="372" y="190" width="26" height="100" fill="url(#usa-bldg1)" rx="1"/>
+    <rect x="372" y="190" width="26" height="4" fill="#2C3140"/>
+    <rect x="402" y="200" width="20" height="90" fill="url(#usa-bldg2)" rx="1"/>
+    <rect x="406" y="188" width="12" height="12" fill="#2C3140"/>
+
+    <!-- Tall modern tower right -->
+    <rect x="426" y="175" width="24" height="115" fill="url(#usa-bldg1)" rx="1"/>
+    <rect x="432" y="170" width="12" height="5" fill="#2C3140"/>
+
+    <!-- Right side -->
+    <rect x="455" y="205" width="20" height="85" fill="url(#usa-bldg2)" rx="1"/>
+    <rect x="480" y="215" width="16" height="75" fill="url(#usa-bldg1)" rx="1"/>
+  </g>
+
+  <!-- Window lights -->
+  <g filter="url(#usa-win-glow)">
+    <rect x="255" y="175" width="2" height="2" fill="#6A758F" opacity="0.8"/>
+    <rect x="261" y="180" width="2" height="2" fill="#454C5F" opacity="0.6"/>
+    <rect x="268" y="175" width="2" height="2" fill="#6A758F" opacity="0.7"/>
+    <rect x="255" y="195" width="2" height="2" fill="#454C5F" opacity="0.5"/>
+    <rect x="268" y="200" width="2" height="2" fill="#6A758F" opacity="0.6"/>
+    <rect x="261" y="210" width="2" height="2" fill="#454C5F" opacity="0.7"/>
+    <rect x="275" y="190" width="2" height="2" fill="#6A758F" opacity="0.5"/>
+    <rect x="255" y="225" width="2" height="2" fill="#454C5F" opacity="0.6"/>
+    <rect x="268" y="230" width="2" height="2" fill="#6A758F" opacity="0.4"/>
+    <rect x="261" y="245" width="2" height="2" fill="#6A758F" opacity="0.5"/>
+    <rect x="275" y="235" width="2" height="2" fill="#454C5F" opacity="0.4"/>
+    <rect x="255" y="260" width="2" height="2" fill="#454C5F" opacity="0.6"/>
+    <rect x="345" y="120" width="2" height="2" fill="#6A758F" opacity="0.6"/>
+    <rect x="352" y="135" width="2" height="2" fill="#454C5F" opacity="0.5"/>
+    <rect x="348" y="155" width="2" height="2" fill="#6A758F" opacity="0.7"/>
+    <rect x="342" y="170" width="2" height="2" fill="#454C5F" opacity="0.4"/>
+    <rect x="355" y="165" width="2" height="2" fill="#6A758F" opacity="0.6"/>
+    <rect x="345" y="190" width="2" height="2" fill="#6A758F" opacity="0.5"/>
+    <rect x="352" y="200" width="2" height="2" fill="#454C5F" opacity="0.6"/>
+    <rect x="348" y="220" width="2" height="2" fill="#6A758F" opacity="0.4"/>
+    <rect x="355" y="235" width="2" height="2" fill="#454C5F" opacity="0.5"/>
+    <rect x="342" y="250" width="2" height="2" fill="#6A758F" opacity="0.3"/>
+    <rect x="224" y="195" width="2" height="2" fill="#454C5F" opacity="0.6"/>
+    <rect x="232" y="200" width="2" height="2" fill="#6A758F" opacity="0.5"/>
+    <rect x="228" y="215" width="2" height="2" fill="#454C5F" opacity="0.7"/>
+    <rect x="236" y="225" width="2" height="2" fill="#6A758F" opacity="0.4"/>
+    <rect x="224" y="240" width="2" height="2" fill="#6A758F" opacity="0.5"/>
+    <rect x="198" y="180" width="2" height="2" fill="#6A758F" opacity="0.5"/>
+    <rect x="202" y="195" width="2" height="2" fill="#454C5F" opacity="0.6"/>
+    <rect x="198" y="215" width="2" height="2" fill="#6A758F" opacity="0.4"/>
+    <rect x="202" y="235" width="2" height="2" fill="#454C5F" opacity="0.5"/>
+    <rect x="377" y="200" width="2" height="2" fill="#6A758F" opacity="0.5"/>
+    <rect x="385" y="215" width="2" height="2" fill="#454C5F" opacity="0.6"/>
+    <rect x="377" y="235" width="2" height="2" fill="#6A758F" opacity="0.4"/>
+    <rect x="407" y="210" width="2" height="2" fill="#6A758F" opacity="0.5"/>
+    <rect x="413" y="230" width="2" height="2" fill="#454C5F" opacity="0.6"/>
+    <rect x="431" y="185" width="2" height="2" fill="#6A758F" opacity="0.5"/>
+    <rect x="438" y="200" width="2" height="2" fill="#454C5F" opacity="0.4"/>
+    <rect x="431" y="220" width="2" height="2" fill="#6A758F" opacity="0.6"/>
+    <rect x="460" y="215" width="2" height="2" fill="#6A758F" opacity="0.5"/>
+    <rect x="136" y="210" width="2" height="2" fill="#454C5F" opacity="0.5"/>
+    <rect x="143" y="225" width="2" height="2" fill="#6A758F" opacity="0.4"/>
+    <rect x="136" y="245" width="2" height="2" fill="#454C5F" opacity="0.6"/>
+    <rect x="170" y="215" width="2" height="2" fill="#6A758F" opacity="0.5"/>
+    <rect x="258" y="240" width="2" height="2" fill="#FF5A1F" opacity="0.15"/>
+    <rect x="345" y="185" width="2" height="2" fill="#FF5A1F" opacity="0.12"/>
+    <rect x="433" y="210" width="2" height="2" fill="#FF5A1F" opacity="0.1"/>
+    <rect x="200" y="200" width="2" height="2" fill="#FF5A1F" opacity="0.12"/>
+    <rect x="380" y="225" width="2" height="2" fill="#FF5A1F" opacity="0.1"/>
+  </g>
+
+  <!-- Waterline -->
+  <line x1="0" y1="290" x2="600" y2="290" stroke="#1E222D" stroke-width="1" opacity="0.8"/>
+
+  <!-- Water -->
+  <rect x="0" y="290" width="600" height="110" fill="url(#usa-water)"/>
+
+  <!-- Water reflections -->
+  <g mask="url(#usa-reflect-mask)" opacity="0.25">
+    <rect x="248" y="295" width="36" height="40" fill="#1E222D"/>
+    <rect x="335" y="295" width="30" height="50" fill="#1E222D"/>
+    <rect x="218" y="300" width="26" height="30" fill="#1A1E28"/>
+    <rect x="370" y="298" width="28" height="35" fill="#1A1E28"/>
+    <rect x="190" y="300" width="22" height="30" fill="#1A1E28"/>
+    <rect x="425" y="300" width="26" height="30" fill="#1A1E28"/>
+    <rect x="130" y="305" width="28" height="25" fill="#161A24"/>
+    <rect x="455" y="305" width="22" height="25" fill="#161A24"/>
+  </g>
+
+  <!-- Water ripples -->
+  <g stroke="#1E222D" stroke-width="0.5" opacity="0.4">
+    <line x1="50" y1="305" x2="200" y2="305"/>
+    <line x1="250" y1="310" x2="450" y2="310"/>
+    <line x1="100" y1="320" x2="350" y2="320"/>
+    <line x1="300" y1="330" x2="550" y2="330"/>
+    <line x1="30" y1="340" x2="280" y2="340"/>
+    <line x1="350" y1="345" x2="580" y2="345"/>
+    <line x1="80" y1="355" x2="250" y2="355"/>
+    <line x1="320" y1="360" x2="520" y2="360"/>
+    <line x1="50" y1="370" x2="400" y2="370"/>
+    <line x1="150" y1="380" x2="550" y2="380"/>
+  </g>
+
+  <!-- Orange water reflection -->
+  <ellipse cx="300" cy="300" rx="120" ry="8" fill="rgba(255,90,31,0.06)"/>
+  <ellipse cx="350" cy="310" rx="80" ry="4" fill="rgba(255,90,31,0.04)"/>
+
+  <!-- Top fade for text readability -->
+  <rect x="0" y="0" width="600" height="120" fill="url(#usa-sky)" opacity="0.5"/>
+</svg></div>
                             <div class="opp-content">
                                 <span class="opp-tag">Global Stage</span>
                                 <h3>Ideabaaz Elevate USA</h3>
@@ -304,7 +539,280 @@
                         </div>
 
                         <div class="opp-card delhi-card hover-glow" onclick="window.location.href='iffd-gateway.html'" style="cursor: pointer;">
-<img src="assets/opp_delhi_minimal.png" alt="Delhi Opportunity" class="opp-bg">
+                            <div class="opp-img-wrap"><svg class="opp-bg" style="width:100%;height:100%;object-fit:cover;" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-label="Delhi futuristic cityscape illustration">
+  <defs>
+    <linearGradient id="del-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#070A10"/>
+      <stop offset="35%" stop-color="#0B0E14"/>
+      <stop offset="65%" stop-color="#1A1520"/>
+      <stop offset="85%" stop-color="#2D1A1A"/>
+      <stop offset="100%" stop-color="#3D1E14"/>
+    </linearGradient>
+    <radialGradient id="del-sunset-glow" cx="50%" cy="78%" r="45%" fx="50%" fy="78%">
+      <stop offset="0%" stop-color="rgba(255,90,31,0.35)"/>
+      <stop offset="30%" stop-color="rgba(255,90,31,0.15)"/>
+      <stop offset="60%" stop-color="rgba(255,90,31,0.05)"/>
+      <stop offset="100%" stop-color="rgba(255,90,31,0)"/>
+    </radialGradient>
+    <linearGradient id="del-ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#121620"/>
+      <stop offset="100%" stop-color="#0B0E14"/>
+    </linearGradient>
+    <linearGradient id="del-bldg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E222D"/>
+      <stop offset="100%" stop-color="#161A24"/>
+    </linearGradient>
+    <linearGradient id="del-bldg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2C3140"/>
+      <stop offset="100%" stop-color="#1E222D"/>
+    </linearGradient>
+    <linearGradient id="del-dome-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2C3140"/>
+      <stop offset="50%" stop-color="#1E222D"/>
+      <stop offset="100%" stop-color="#161A24"/>
+    </linearGradient>
+    <linearGradient id="del-road" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(255,90,31,0)"/>
+      <stop offset="20%" stop-color="rgba(255,90,31,0.4)"/>
+      <stop offset="50%" stop-color="rgba(255,90,31,0.6)"/>
+      <stop offset="80%" stop-color="rgba(255,90,31,0.4)"/>
+      <stop offset="100%" stop-color="rgba(255,90,31,0)"/>
+    </linearGradient>
+    <linearGradient id="del-road2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(255,200,100,0)"/>
+      <stop offset="30%" stop-color="rgba(255,200,100,0.3)"/>
+      <stop offset="50%" stop-color="rgba(255,200,100,0.5)"/>
+      <stop offset="70%" stop-color="rgba(255,200,100,0.3)"/>
+      <stop offset="100%" stop-color="rgba(255,200,100,0)"/>
+    </linearGradient>
+    <filter id="del-star-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="del-soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="del-haze" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="del-win-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="0.8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="del-light-trail" x="-10%" y="-50%" width="120%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="600" height="400" fill="url(#del-sky)"/>
+
+  <!-- Stars -->
+  <g filter="url(#del-star-glow)" opacity="0.6">
+    <circle cx="50" cy="22" r="1" fill="#9AA4B8"/>
+    <circle cx="130" cy="45" r="0.7" fill="#6A758F"/>
+    <circle cx="200" cy="15" r="1.1" fill="#9AA4B8"/>
+    <circle cx="270" cy="38" r="0.6" fill="#454C5F"/>
+    <circle cx="350" cy="12" r="0.9" fill="#9AA4B8"/>
+    <circle cx="410" cy="50" r="0.7" fill="#6A758F"/>
+    <circle cx="470" cy="20" r="1" fill="#9AA4B8"/>
+    <circle cx="540" cy="42" r="0.5" fill="#454C5F"/>
+    <circle cx="90" cy="70" r="0.6" fill="#454C5F"/>
+    <circle cx="320" cy="65" r="0.8" fill="#6A758F"/>
+    <circle cx="500" cy="72" r="0.5" fill="#454C5F"/>
+    <circle cx="170" cy="80" r="0.4" fill="#454C5F"/>
+    <circle cx="560" cy="30" r="0.8" fill="#6A758F"/>
+    <circle cx="30" cy="55" r="0.5" fill="#454C5F"/>
+    <circle cx="440" cy="60" r="0.6" fill="#454C5F"/>
+  </g>
+
+  <!-- Sunset glow -->
+  <rect width="600" height="400" fill="url(#del-sunset-glow)"/>
+
+  <!-- Horizon sun glow -->
+  <ellipse cx="300" cy="265" rx="180" ry="25" fill="rgba(255,90,31,0.12)" filter="url(#del-soft-glow)"/>
+  <ellipse cx="300" cy="268" rx="100" ry="12" fill="rgba(255,90,31,0.08)" filter="url(#del-soft-glow)"/>
+
+  <!-- Atmospheric haze layer -->
+  <rect x="0" y="230" width="600" height="40" fill="rgba(255,90,31,0.03)" filter="url(#del-haze)"/>
+
+  <!-- Far background buildings -->
+  <g opacity="0.35">
+    <rect x="15" y="230" width="16" height="50" fill="#161A24"/>
+    <rect x="35" y="240" width="12" height="40" fill="#161A24"/>
+    <rect x="55" y="225" width="18" height="55" fill="#161A24"/>
+    <rect x="530" y="235" width="14" height="45" fill="#161A24"/>
+    <rect x="550" y="225" width="20" height="55" fill="#161A24"/>
+    <rect x="575" y="240" width="15" height="40" fill="#161A24"/>
+  </g>
+
+  <!-- Mid buildings left -->
+  <g opacity="0.6">
+    <rect x="80" y="215" width="20" height="65" fill="#1A1E28"/>
+    <rect x="104" y="225" width="16" height="55" fill="#1A1E28"/>
+    <!-- Indian arch motif left -->
+    <rect x="124" y="220" width="22" height="60" fill="#1A1E28"/>
+    <path d="M124,220 Q135,208 146,220" fill="#1E222D" stroke="#2C3140" stroke-width="0.5"/>
+  </g>
+
+  <!-- Mid buildings right -->
+  <g opacity="0.6">
+    <rect x="460" y="218" width="18" height="62" fill="#1A1E28"/>
+    <rect x="482" y="228" width="14" height="52" fill="#1A1E28"/>
+    <!-- Indian arch motif right -->
+    <rect x="500" y="222" width="22" height="58" fill="#1A1E28"/>
+    <path d="M500,222 Q511,210 522,222" fill="#1E222D" stroke="#2C3140" stroke-width="0.5"/>
+  </g>
+
+  <!-- Left modern towers -->
+  <g>
+    <rect x="148" y="200" width="24" height="80" fill="url(#del-bldg1)" rx="1"/>
+    <rect x="148" y="200" width="24" height="4" fill="#2C3140"/>
+    <rect x="176" y="210" width="18" height="70" fill="url(#del-bldg2)" rx="1"/>
+    <rect x="198" y="195" width="22" height="85" fill="url(#del-bldg1)" rx="1"/>
+    <rect x="204" y="190" width="10" height="5" fill="#2C3140"/>
+  </g>
+
+  <!-- Right modern towers -->
+  <g>
+    <rect x="400" y="205" width="22" height="75" fill="url(#del-bldg1)" rx="1"/>
+    <rect x="400" y="205" width="22" height="4" fill="#2C3140"/>
+    <rect x="426" y="195" width="20" height="85" fill="url(#del-bldg2)" rx="1"/>
+    <rect x="450" y="208" width="18" height="72" fill="url(#del-bldg1)" rx="1"/>
+    <rect x="455" y="203" width="8" height="5" fill="#2C3140"/>
+  </g>
+
+  <!-- BHARAT MANDAPAM - Central dome structure -->
+  <g>
+    <!-- Base structure -->
+    <rect x="230" y="245" width="140" height="35" fill="url(#del-bldg2)" rx="2"/>
+    <!-- Column details on base -->
+    <rect x="240" y="248" width="3" height="32" fill="#2C3140" opacity="0.6"/>
+    <rect x="255" y="248" width="3" height="32" fill="#2C3140" opacity="0.6"/>
+    <rect x="270" y="248" width="3" height="32" fill="#2C3140" opacity="0.6"/>
+    <rect x="327" y="248" width="3" height="32" fill="#2C3140" opacity="0.6"/>
+    <rect x="342" y="248" width="3" height="32" fill="#2C3140" opacity="0.6"/>
+    <rect x="357" y="248" width="3" height="32" fill="#2C3140" opacity="0.6"/>
+
+    <!-- Upper structure -->
+    <rect x="248" y="225" width="104" height="20" fill="url(#del-bldg1)" rx="2"/>
+
+    <!-- Main dome -->
+    <ellipse cx="300" cy="225" rx="60" ry="42" fill="url(#del-dome-grad)"/>
+    <!-- Dome highlight -->
+    <ellipse cx="295" cy="210" rx="35" ry="22" fill="#2C3140" opacity="0.3"/>
+    <!-- Dome ridge lines -->
+    <path d="M260,225 Q280,188 300,183 Q320,188 340,225" fill="none" stroke="#2C3140" stroke-width="0.8" opacity="0.5"/>
+    <path d="M270,225 Q285,195 300,190 Q315,195 330,225" fill="none" stroke="#2C3140" stroke-width="0.5" opacity="0.4"/>
+
+    <!-- Dome crown/finial -->
+    <rect x="297" y="178" width="6" height="8" fill="#2C3140"/>
+    <circle cx="300" cy="175" r="4" fill="#2C3140"/>
+    <circle cx="300" cy="175" r="2" fill="#FF5A1F" opacity="0.4" filter="url(#del-star-glow)"/>
+
+    <!-- Wing structures with arches -->
+    <rect x="210" y="240" width="20" height="40" fill="url(#del-bldg1)"/>
+    <path d="M210,240 Q220,232 230,240" fill="#1E222D" stroke="#2C3140" stroke-width="0.5"/>
+    <rect x="370" y="240" width="20" height="40" fill="url(#del-bldg1)"/>
+    <path d="M370,240 Q380,232 390,240" fill="#1E222D" stroke="#2C3140" stroke-width="0.5"/>
+
+    <!-- Small decorative arches on base -->
+    <path d="M280,245 Q290,238 300,245" fill="none" stroke="#454C5F" stroke-width="0.5" opacity="0.5"/>
+    <path d="M300,245 Q310,238 320,245" fill="none" stroke="#454C5F" stroke-width="0.5" opacity="0.5"/>
+  </g>
+
+  <!-- Window lights on buildings -->
+  <g filter="url(#del-win-glow)">
+    <!-- Left towers -->
+    <rect x="154" y="210" width="2" height="2" fill="#6A758F" opacity="0.6"/>
+    <rect x="160" y="225" width="2" height="2" fill="#454C5F" opacity="0.5"/>
+    <rect x="154" y="240" width="2" height="2" fill="#6A758F" opacity="0.4"/>
+    <rect x="181" y="220" width="2" height="2" fill="#454C5F" opacity="0.5"/>
+    <rect x="185" y="240" width="2" height="2" fill="#6A758F" opacity="0.4"/>
+    <rect x="203" y="205" width="2" height="2" fill="#6A758F" opacity="0.6"/>
+    <rect x="210" y="220" width="2" height="2" fill="#454C5F" opacity="0.5"/>
+    <rect x="203" y="240" width="2" height="2" fill="#6A758F" opacity="0.4"/>
+
+    <!-- Right towers -->
+    <rect x="405" y="215" width="2" height="2" fill="#6A758F" opacity="0.5"/>
+    <rect x="412" y="230" width="2" height="2" fill="#454C5F" opacity="0.6"/>
+    <rect x="405" y="248" width="2" height="2" fill="#6A758F" opacity="0.4"/>
+    <rect x="431" y="205" width="2" height="2" fill="#6A758F" opacity="0.5"/>
+    <rect x="437" y="220" width="2" height="2" fill="#454C5F" opacity="0.4"/>
+    <rect x="431" y="240" width="2" height="2" fill="#6A758F" opacity="0.5"/>
+    <rect x="455" y="218" width="2" height="2" fill="#454C5F" opacity="0.5"/>
+    <rect x="460" y="238" width="2" height="2" fill="#6A758F" opacity="0.4"/>
+
+    <!-- Dome structure lights -->
+    <rect x="260" y="255" width="2" height="2" fill="#6A758F" opacity="0.4"/>
+    <rect x="280" y="258" width="2" height="2" fill="#454C5F" opacity="0.5"/>
+    <rect x="318" y="255" width="2" height="2" fill="#6A758F" opacity="0.4"/>
+    <rect x="340" y="258" width="2" height="2" fill="#454C5F" opacity="0.5"/>
+    <rect x="300" y="260" width="2" height="2" fill="#6A758F" opacity="0.3"/>
+
+    <!-- Warm accent lights -->
+    <rect x="157" y="230" width="2" height="2" fill="#FF5A1F" opacity="0.12"/>
+    <rect x="435" y="225" width="2" height="2" fill="#FF5A1F" opacity="0.1"/>
+    <rect x="290" y="252" width="2" height="2" fill="#FF5A1F" opacity="0.1"/>
+    <rect x="310" y="250" width="2" height="2" fill="#FF5A1F" opacity="0.12"/>
+  </g>
+
+  <!-- City lights scattered (atmospheric) -->
+  <g filter="url(#del-star-glow)" opacity="0.5">
+    <circle cx="90" cy="260" r="1" fill="#6A758F"/>
+    <circle cx="115" cy="255" r="0.8" fill="#454C5F"/>
+    <circle cx="500" cy="258" r="1" fill="#6A758F"/>
+    <circle cx="530" cy="262" r="0.7" fill="#454C5F"/>
+    <circle cx="45" cy="265" r="0.6" fill="#454C5F"/>
+    <circle cx="565" cy="260" r="0.8" fill="#6A758F"/>
+  </g>
+
+  <!-- Ground / road area -->
+  <rect x="0" y="280" width="600" height="120" fill="url(#del-ground)"/>
+
+  <!-- Highway / road -->
+  <rect x="0" y="290" width="600" height="30" fill="#0E1219"/>
+
+  <!-- Road surface lines -->
+  <g opacity="0.3">
+    <line x1="0" y1="305" x2="600" y2="305" stroke="#1E222D" stroke-width="0.5"/>
+    <line x1="0" y1="295" x2="600" y2="295" stroke="#1E222D" stroke-width="0.5"/>
+    <!-- Center dashes -->
+    <line x1="20" y1="300" x2="60" y2="300" stroke="#2C3140" stroke-width="1" stroke-dasharray="8,12"/>
+    <line x1="80" y1="300" x2="200" y2="300" stroke="#2C3140" stroke-width="1" stroke-dasharray="8,12"/>
+    <line x1="220" y1="300" x2="380" y2="300" stroke="#2C3140" stroke-width="1" stroke-dasharray="8,12"/>
+    <line x1="400" y1="300" x2="520" y2="300" stroke="#2C3140" stroke-width="1" stroke-dasharray="8,12"/>
+    <line x1="540" y1="300" x2="600" y2="300" stroke="#2C3140" stroke-width="1" stroke-dasharray="8,12"/>
+  </g>
+
+  <!-- Light trails on highway (orange) -->
+  <g filter="url(#del-light-trail)">
+    <!-- Forward lane trails (orange/red) -->
+    <line x1="30" y1="297" x2="180" y2="297" stroke="url(#del-road)" stroke-width="1.5" opacity="0.7"/>
+    <line x1="200" y1="296" x2="400" y2="296" stroke="url(#del-road)" stroke-width="2" opacity="0.8"/>
+    <line x1="420" y1="297" x2="570" y2="297" stroke="url(#del-road)" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- Return lane trails (warm white/yellow) -->
+    <line x1="50" y1="303" x2="220" y2="303" stroke="url(#del-road2)" stroke-width="1.2" opacity="0.5"/>
+    <line x1="250" y1="304" x2="450" y2="304" stroke="url(#del-road2)" stroke-width="1.5" opacity="0.6"/>
+    <line x1="470" y1="303" x2="590" y2="303" stroke="url(#del-road2)" stroke-width="1.2" opacity="0.5"/>
+  </g>
+
+  <!-- Foreground atmospheric elements -->
+  <rect x="0" y="320" width="600" height="80" fill="#080B10" opacity="0.9"/>
+
+  <!-- Scattered ground lights -->
+  <g filter="url(#del-star-glow)" opacity="0.3">
+    <circle cx="100" cy="335" r="1" fill="#6A758F"/>
+    <circle cx="250" cy="345" r="0.8" fill="#454C5F"/>
+    <circle cx="400" cy="340" r="1" fill="#6A758F"/>
+    <circle cx="520" cy="350" r="0.7" fill="#454C5F"/>
+  </g>
+
+  <!-- Top fade for text readability -->
+  <rect x="0" y="0" width="600" height="120" fill="url(#del-sky)" opacity="0.5"/>
+</svg></div>
                             <div class="opp-content">
                                 <span class="opp-tag">National Showcase</span>
                                 <h3>Ideabaaz Delhi - IFFD</h3>
